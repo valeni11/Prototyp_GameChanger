@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taskosaurus - Aufgabenbörse</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo"><span class="logo-icon">🦖</span> Taskosaurus</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Aufgabenbörse</a></li>
+        <li><a href="pages/my-tasks.html">Meine Aufgaben</a></li>
+        <li><a href="pages/store.html">Prämienshop</a></li>
+        <li><a href="pages/roadmap.html">Unternehmens-Roadmap</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="profile-section">
+          <div class="level-badge">Professional Level 5</div>
+          <div class="points-display">🪙 2.340 Punkte</div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Zentrale Aufgabenbörse</h1>
+      <p>Übernehmen Sie qualifizierte Projekttickets, sammeln Sie Punkte und lösen Sie diese im Prämienshop ein.</p>
+    </section>
+
+    <div class="grid">
+      <section>
+        <h2>🏆 Top Performer Scoreboard</h2>
+        <p>Erreichte Individualpunkte der laufenden Woche</p>
+        <ul class="leaderboard">
+          <li class="leaderboard-item">
+            <span class="rank">1</span>
+            <span class="leaderboard-name">Anna Müller</span>
+            <span class="leaderboard-points">5.890 Pkt.</span>
+          </li>
+          <li class="leaderboard-item">
+            <span class="rank">2</span>
+            <span class="leaderboard-name">Max Schmidt</span>
+            <span class="leaderboard-points">4.560 Pkt.</span>
+          </li>
+          <li class="leaderboard-item current-user">
+            <span class="rank">3</span>
+            <span class="leaderboard-name">Sie (aktuell)</span>
+            <span class="leaderboard-points">2.340 Pkt.</span>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>📊 Team-Performance</h2>
+        <p>Kumulierte Wochenleistung nach Entwicklungsdomäne</p>
+        <ul class="leaderboard">
+          <li class="leaderboard-item">
+            <span class="rank">1</span>
+            <span class="leaderboard-name">Backend Development</span>
+            <span class="leaderboard-points">28.450 Pkt.</span>
+          </li>
+          <li class="leaderboard-item">
+            <span class="rank">2</span>
+            <span class="leaderboard-name">Frontend Development</span>
+            <span class="leaderboard-points">24.780 Pkt.</span>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <section>
+      <h2>📋 Verfügbare Projekttickets</h2>
+      <p>Wählen Sie ein freies Ticket zur Bearbeitung aus.</p>
+      
+      <div class="task-grid">
+        <!-- Task 1 -->
+        <div class="task-card">
+          <div class="task-header">
+            <h3 class="task-title">Kundenmail beantworten</h3>
+            <span class="task-priority priority-high">Hoch</span>
+          </div>
+          <p class="task-description">Beantwortung der externen API-Integrationsanfrage von Großkunde XYZ.</p>
+          <div class="task-meta">
+            <div class="meta-item">
+              <span class="meta-label">Wertung</span>
+              <span class="meta-value pts">🪙 50</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Soll-Zeit</span>
+              <span class="meta-value time-estimate">⏱ 15 Min</span>
+            </div>
+          </div>
+          <div class="task-actions">
+            <a href="pages/my-tasks.html" class="btn">Ticket übernehmen</a>
+          </div>
+        </div>
+
+        <!-- Task 2 -->
+        <div class="task-card">
+          <div class="task-header">
+            <h3 class="task-title">Q3-Bericht finalisieren</h3>
+            <span class="task-priority priority-high">Hoch</span>
+          </div>
+          <p class="task-description">Zusammenfassung der Performance-Metriken für die Geschäftsführung.</p>
+          <div class="task-meta">
+            <div class="meta-item">
+              <span class="meta-label">Wertung</span>
+              <span class="meta-value pts">🪙 120</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Soll-Zeit</span>
+              <span class="meta-value time-estimate">⏱ 45 Min</span>
+            </div>
+          </div>
+          <div class="task-actions">
+            <a href="pages/my-tasks.html" class="btn">Ticket übernehmen</a>
+          </div>
+        </div>
+
+        <!-- Task 3 -->
+        <div class="task-card">
+          <div class="task-header">
+            <h3 class="task-title">Code Review PR #423</h3>
+            <span class="task-priority priority-medium">Mittel</span>
+          </div>
+          <p class="task-description">Sicherheits- und Architekturprüfung der neuen Checkout-Komponente.</p>
+          <div class="task-meta">
+            <div class="meta-item">
+              <span class="meta-label">Wertung</span>
+              <span class="meta-value pts">🪙 75</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Soll-Zeit</span>
+              <span class="meta-value time-estimate">⏱ 30 Min</span>
+            </div>
+          </div>
+          <div class="task-actions">
+            <a href="pages/my-tasks.html" class="btn">Ticket übernehmen</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Taskosaurus Enterprise. Alle Rechte vorbehalten.</p>
+    <p><a href="#">Impressum</a> | <a href="#">Datenschutz</a></p>
+  </footer>
+</body>
+</html>

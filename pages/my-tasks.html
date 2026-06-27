@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meine Aufgaben - Taskosaurus</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../index.html" class="logo"><span class="logo-icon">🦖</span> Taskosaurus</a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Aufgabenbörse</a></li>
+        <li><a href="my-tasks.html" class="active">Meine Aufgaben</a></li>
+        <li><a href="store.html">Prämienshop</a></li>
+        <li><a href="roadmap.html">Unternehmens-Roadmap</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="profile-section">
+          <div class="level-badge">Professional Level 5</div>
+          <div class="points-display">🪙 2.340 Punkte</div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Persönliches Ticket-Board</h1>
+      <p>Verwalten und bearbeiten Sie Ihre aktuell zugewiesenen Arbeitspakete.</p>
+    </section>
+
+    <div class="stats-container">
+      <div class="stat-card in-progress">
+        <div class="stat-number">1</div>
+        <div class="stat-label">In Bearbeitung</div>
+      </div>
+      <div class="stat-card pending">
+        <div class="stat-number">4</div>
+        <div class="stat-label">Geplant</div>
+      </div>
+      <div class="stat-card completed">
+        <div class="stat-number">24</div>
+        <div class="stat-label">Abgeschlossen</div>
+      </div>
+    </div>
+
+    <section>
+      <h2>Aktive Bearbeitung</h2>
+      <div class="my-tasks-list">
+        <div class="task-row in-progress">
+          <div class="task-row-content">
+            <div class="task-row-title">Bugfix Mobile Login-Prozess</div>
+            <div class="task-row-meta">
+              <span>🪙 150 Punkte</span>
+              <span>⏱ 60 Min kalkuliert</span>
+            </div>
+          </div>
+          <div class="task-row-actions">
+            <button class="btn btn-small">Abschließen</button>
+            <button class="btn btn-secondary btn-small">Zurückstellen</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Taskosaurus Enterprise. Alle Rechte vorbehalten.</p>
+  </footer>
+</body>
+</html>
